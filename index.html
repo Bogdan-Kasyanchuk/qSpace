@@ -17,46 +17,65 @@
 
 <body>
     <!-- ========== ХЕДЕР ========== -->
-    <header>
-        <p>qSpace</p>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Facilities">Facilities</a></li>
-                <li><a href="#Spaces">Spaces</a></li>
-                <li><a href="#Community">Community</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header__container container">
+            <p class="header__logo">qSpace</p>
+            <nav class="header__navigation">
+                <ul class="menu list">
+                    <li class="menu__items"><a class="header__link link" href="#Home">Home</a></li>
+                    <li class="menu__items"><a class="header__link link" href="#Facilities">Facilities</a></li>
+                    <li class="menu__items"><a class="header__link link" href="#Spaces">Spaces</a></li>
+                    <li class="menu__items"><a class="header__link link" href="#Community">Community</a></li>
+                    <li class="menu__items"><a class="header__link link" href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- ========== ХЕДЕР-КОНЕЦ ========== -->
 
     <main>
         <!-- ========== ГЕРОЙ ========== -->
-        <section>
-            <p>Jakarta, Indonesia</p>
-            <h1>Revolutioning the way people and company works</h1>
-            <P>Eu consectetur odio imperdiet ipsum dui. Magna sed sagittis lobortis vel auctor pharetra risus.</P>
-            <button type="button">Reservation</button>
-            <ul>
-                <li>
-                    <p>Over 1000+ Happy Customers</p>
-                    <img src="./images/happy-cust.jpg" alt="Happy Customers" width="304px" height="304px">
-                </li>
-                <li>
-                    <p>Engaging Community</p>
-                    <img src="./images/eng-com.jpg" alt="Engaging Community" width="296px" height="296px">
-                </li>
-                <li>
-                    <p>Premium Facilities</p>
-                    <img src="./images/prem-facil.jpg" alt="Premium Facilities" width="231px" height="231px">
-                </li>
-            </ul>
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__block-text">
+                    <p class="hero__city">Jakarta, Indonesia</p>
+                    <h1 class="hero__title">Revolutioning the way people and company works</h1>
+                    <P class="hero__description">Eu consectetur odio imperdiet ipsum dui. Magna sed <br> sagittis
+                        lobortis vel auctor pharetra risus.</P>
+                    <button class="button" type="button">Reservation</button>
+                </div>
+                <div class="hero__block-img">
+                    <ul class="hero__list list">
+                        <li class="hero__item">
+                            <p class="hero__img-name">Over 1000+ Happy Customers</p>
+                            <div class="hero__img-wrapper">
+                                <img class="hero__img" src="./images/hero/happy-cust.jpg" alt="Happy Customers"
+                                    width="304px" height="304px">
+                            </div>
+                        </li>
+                        <li class="hero__item">
+                            <p class="hero__img-name">Engaging Community</p>
+                            <div class="hero__img-wrapper">
+                                <img class="hero__img" src="./images/hero/eng-com.jpg" alt="Engaging Community"
+                                    width="296px" height="296px">
+                            </div>
+                        </li>
+                        <li class="hero__item">
+                            <p class="hero__img-name">Premium Facilities</p>
+                            <div class="hero__img-wrapper">
+                                <img class="hero__img" src="./images/hero/prem-facil.jpg" alt="Premium Facilities"
+                                    width="231px" height="231px">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <!-- ========== ГЕРОЙ-КОНЕЦ ========== -->
+
         <!-- ========== О НАС ========== -->
         <section>
-            <img src="./images/people.jpg" alt="people" width="357px" height="341px">
+            <img src="./images/about/people.jpg" alt="people" width="357px" height="341px">
             <h2>About</h2>
             <p>Our Goals</p>
             <p>We believe work is about people and ideas. qSpace are inhabited by forward thinkers, innovators and game
@@ -64,6 +83,7 @@
             <a href="#Learn More">Learn More</a>
         </section>
         <!-- ========== О НАС-КОНЕЦ ========== -->
+
         <!-- ========== УДОБСТВА ========== -->
         <section>
             <h2>Facilities</h2>
@@ -96,6 +116,7 @@
             </ul>
         </section>
         <!-- ========== УДОБСТВА-КОНЕЦ ========== -->
+
         <!-- ========== ПРОСТРАНСТВО ========== -->
         <section>
             <h2>Spaces</h2>

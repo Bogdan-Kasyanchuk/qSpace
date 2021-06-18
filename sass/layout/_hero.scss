@@ -1,0 +1,96 @@
+.hero__container {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 65px;
+}
+
+.hero__block-text {
+  min-width: 730px;
+  padding-top: 35px;
+  padding-right: 15px;
+}
+
+.hero__city {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.45;
+  letter-spacing: 1px;
+}
+
+.hero__title {
+  margin-bottom: 16px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 56px;
+  line-height: 1.45;
+}
+
+.hero__description {
+  margin-bottom: 32px;
+  opacity: 0.6;
+}
+
+.button {
+  padding: 16px 66px;
+  font-family: 'DM Sans', sans-serif;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.55;
+  color: var(--secondary-text-color);
+  background-color: transparent;
+  border: 1px solid rgba(18, 84, 255, 0.1);
+  border-radius: 8px;
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-accent-color);
+    background-color: var(--primary-accent-color);
+    cursor: pointer;
+  }
+}
+
+.hero__block-img {
+  position: relative;
+  padding-left: 15px;
+}
+
+.hero__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.hero__item {
+  position: relative;
+
+  &:nth-child(1) {
+    margin-bottom: 55px;
+  }
+
+  &:nth-child(2) {
+    position: absolute;
+    left: -260px;
+    top: 270px;
+  }
+}
+
+.hero__img-name {
+  position: absolute;
+  left: -50px;
+  top: 0px;
+  padding: 16px;
+  font-size: 16px;
+  background-color: var(--secondary-accent-color);
+  border-radius: 8px;
+  outline: 1px solid red;
+}
+
+.hero__img-wrapper {
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.hero__img {
+  border-radius: 50%;
+}
