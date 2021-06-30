@@ -1,9 +1,13 @@
-.header__container {
-  display: flex;
-  align-items: center;
+.header {
   padding-top: 48px;
   padding-bottom: 35px;
 }
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
 .header__logo {
   position: relative;
   margin-right: 345px;
