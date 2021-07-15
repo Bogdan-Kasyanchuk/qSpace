@@ -484,23 +484,23 @@ body {
 
 .social-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .social-list__item {
   line-height: 0;
 }
 
-.social-list__item:not(:last-child) {
-  margin-right: 24px;
-}
-
 .social-list__link {
   display: block;
+  padding: 8px;
   fill: var(--secondary-text-color);
 }
 
 .social-list__link:hover, .social-list__link:focus {
-  fill: var(--primary-accent-color);
+  background-color: var(--primary-accent-color);
+  fill: var(--secondary-accent-color);
+  border-radius: 8px;
 }
 
 .footer__links {
@@ -572,6 +572,7 @@ body {
 
 .footer-form__wrapper {
   position: relative;
+  display: block;
 }
 
 .footer-form__input {
@@ -599,7 +600,7 @@ body {
   position: absolute;
   top: 50%;
   left: 243px;
-  padding: 0 15px;
+  padding: 7px 15px;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
