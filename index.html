@@ -1,448 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>qSpace</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
-      integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body>
-    <!-- ========== ХЕДЕР ========== -->
-    <header class="header">
-      <div class="header__container container">
-        <p class="header__logo">qSpace</p>
-        <nav class="header__navigation">
-          <ul class="menu list">
-            <li class="menu__items">
-              <a class="header__link link" href="#Home">Home</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>qSpace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Questrial&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- ========== ХЕДЕР ========== -->
+  <header class="header">
+    <div class="header__container container">
+      <p class="header__logo">qSpace</p>
+      <nav class="header__navigation">
+        <ul class="menu list">
+          <li class="menu__items">
+            <a class="header__link link" href="#Home">Home</a>
+          </li>
+          <li class="menu__items">
+            <a class="header__link link" href="#Facilities">Facilities</a>
+          </li>
+          <li class="menu__items">
+            <a class="header__link link" href="#Spaces">Spaces</a>
+          </li>
+          <li class="menu__items">
+            <a class="header__link link" href="#Community">Community</a>
+          </li>
+          <li class="menu__items">
+            <a class="header__link link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ========== ХЕДЕР-КОНЕЦ ========== -->
+
+  <main>
+    <!-- ========== ГЕРОЙ ========== -->
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__block-text">
+          <p class="hero__city">Jakarta, Indonesia</p>
+          <h1 class="hero__title">Revolutioning the way people and company works</h1>
+          <p class="hero__description">
+            Eu consectetur odio imperdiet ipsum dui. Magna sed <br />
+            sagittis lobortis vel auctor pharetra risus.
+          </p>
+          <button class="button" type="button">
+            Reservation<svg class="button__icon" width="24" height="24">
+              <use href="./images/icons.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="hero__block-img">
+          <ul class="hero__list list">
+            <li class="hero__item">
+              <p class="hero__img-name">Over 1000+ Happy Customers</p>
+              <div class="hero__img-wrapper">
+                <picture>
+                  <source srcset="
+                        ./images/hero/webp/happy-cust.webp    1x,
+                        ./images/hero/webp/happy-cust@2x.webp 2x
+                      " type="image/webp" />
+
+                  <source srcset="
+                        ./images/hero/jpg/happy-cust.jpg    1x,
+                        ./images/hero/jpg/happy-cust@2x.jpg 2x
+                      " />
+                  <img class="hero__img" src="./images/hero/jpg/happy-cust.jpg" alt="Happy Customers" width="305"
+                    height="305" />
+                </picture>
+              </div>
             </li>
-            <li class="menu__items">
-              <a class="header__link link" href="#Facilities">Facilities</a>
+            <li class="hero__item">
+              <p class="hero__img-name">Engaging Community</p>
+              <div class="hero__img-wrapper">
+                <picture>
+                  <source srcset="
+                        ./images/hero/webp/eng-com.webp    1x,
+                        ./images/hero/webp/eng-com@2x.webp 2x
+                      " type="image/webp" />
+
+                  <source srcset="./images/hero/jpg/eng-com.jpg 1x, ./images/hero/jpg/eng-com@2x.jpg 2x" />
+                  <img class="hero__img" src="./images/hero/jpg/eng-com.jpg" alt="Engaging Community" width="296"
+                    height="296" />
+                </picture>
+              </div>
             </li>
-            <li class="menu__items">
-              <a class="header__link link" href="#Spaces">Spaces</a>
-            </li>
-            <li class="menu__items">
-              <a class="header__link link" href="#Community">Community</a>
-            </li>
-            <li class="menu__items">
-              <a class="header__link link" href="#Contact">Contact</a>
+            <li class="hero__item">
+              <p class="hero__img-name">Premium Facilities</p>
+              <div class="hero__img-wrapper">
+                <picture>
+                  <source srcset="
+                        ./images/hero/webp/prem-facil.webp    1x,
+                        ./images/hero/webp/prem-facil@2x.webp 2x
+                      " type="image/webp" />
+
+                  <source srcset="
+                        ./images/hero/jpg/prem-facil.jpg    1x,
+                        ./images/hero/jpg/prem-facil@2x.jpg 2x
+                      " />
+                  <img class="hero__img" src="./images/hero/jpg/prem-facil.jpg" alt="Premium Facilities" width="231"
+                    height="231" />
+                </picture>
+              </div>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
-    <!-- ========== ХЕДЕР-КОНЕЦ ========== -->
+    </section>
+    <!-- ========== ГЕРОЙ-КОНЕЦ ========== -->
 
-    <main>
-      <!-- ========== ГЕРОЙ ========== -->
-      <section class="hero">
-        <div class="hero__container container">
-          <div class="hero__block-text">
-            <p class="hero__city">Jakarta, Indonesia</p>
-            <h1 class="hero__title">Revolutioning the way people and company works</h1>
-            <p class="hero__description">
-              Eu consectetur odio imperdiet ipsum dui. Magna sed <br />
-              sagittis lobortis vel auctor pharetra risus.
+    <!-- ========== О НАС ========== -->
+    <section class="about">
+      <div class="about__container container">
+        <div class="about__block-img">
+          <picture>
+            <source srcset="./images/about/webp/people.webp 1x, ./images/about/webp/people@2x.webp 2x"
+              type="image/webp" />
+
+            <source srcset="./images/about/webp/people.jpg 1x, ./images/about/webp/people@2x.jpg 2x" />
+            <img class="about__img" src="./images/about/webp/people.jpg" alt="People" width="341" height="334" />
+          </picture>
+        </div>
+        <div class="about__block-text">
+          <h2 class="about__subtitle">About</h2>
+          <p class="about__title">Our Goals</p>
+          <p class="about__description">
+            We believe work is about people and ideas. qSpace are inhabited by forward thinkers,
+            innovators and game changers who are confident in achieving their goals.
+          </p>
+          <a class="about__link link" href="#LearnMore">Learn More<svg class="about__link-icon" width="24" height="24">
+              <use href="./images/icons.svg#arrow"></use>
+            </svg></a>
+        </div>
+      </div>
+    </section>
+    <!-- ========== О НАС-КОНЕЦ ========== -->
+
+    <!-- ========== УДОБСТВА ========== -->
+    <section class="facilities">
+      <div class="facilities__container container">
+        <h2 class="facilities__subtitle">Facilities</h2>
+        <p class="facilities__title">The advantages that we provide</p>
+        <ul class="facilities__list list">
+          <li class="facilities__item">
+            <svg class="facilities__icon" width="66" height="66">
+              <use href="./images/icons.svg#network"></use>
+            </svg>
+            <h3 class="facilities__item-title">Engaging Community</h3>
+            <p class="facilities__description">
+              Phasellus suspendisse non, convallis quam aliquet volutpat. Netus cras quam orc.
             </p>
-            <button class="button" type="button">
-              Reservation<svg class="button__icon" width="24" height="24">
+          </li>
+          <li class="facilities__item">
+            <svg class="facilities__icon" width="66" height="66">
+              <use href="./images/icons.svg#premium"></use>
+            </svg>
+            <h3 class="facilities__item-title">Premium Facilities</h3>
+            <p class="facilities__description">
+              Diam eu, mauris, in amet viverra. Eget ut scelerisque eget nibh ut quis.
+            </p>
+          </li>
+          <li class="facilities__item">
+            <svg class="facilities__icon" width="66" height="66">
+              <use href="./images/icons.svg#price"></use>
+            </svg>
+            <h3 class="facilities__item-title">Affordable Price</h3>
+            <p class="facilities__description">Velit, rutrum a cursus eleifend egestas.</p>
+          </li>
+          <li class="facilities__item">
+            <svg class="facilities__icon" width="66" height="66">
+              <use href="./images/icons.svg#user"></use>
+            </svg>
+            <h3 class="facilities__item-title">Workspace Personalization</h3>
+            <p class="facilities__description">Ornare tempor morbi tempor nibh est a in.</p>
+          </li>
+          <li class="facilities__item">
+            <svg class="facilities__icon" width="66" height="66">
+              <use href="./images/icons.svg#time"></use>
+            </svg>
+            <h3 class="facilities__item-title">24/7 Access</h3>
+            <p class="facilities__description">
+              Tellus rhoncus enim nisl et lorem in sed. Congue nunc est habitant quam lectus
+              neque.
+            </p>
+          </li>
+          <li class="facilities__item">
+            <svg class="facilities__icon" width="66" height="66">
+              <use href="./images/icons.svg#clean"></use>
+            </svg>
+            <h3 class="facilities__item-title">Clean Environment</h3>
+            <p class="facilities__description">
+              Pretium sodales vitae id gravida tempor. Erat adipiscing orci turpis fames nunc, id
+              diam.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ========== УДОБСТВА-КОНЕЦ ========== -->
+
+    <!-- ========== ПРОСТРАНСТВО ========== -->
+    <section class="spaces">
+      <div class="spaces__container container">
+        <h2 class="spaces__title">Spaces</h2>
+        <ul class="list-spaces list">
+          <li class="list-spaces__item">
+            <div class="list-spaces__wrapper">
+              <h3 class="list-spaces__subtitle">Office Space</h3>
+              <p class="list-spaces__description">
+                Your own private office with a flexible contract that adapts to your business.
+              </p>
+              <ul class="list-spaces__sublist">
+                <li class="list-spaces__subitem">Access 24/7</li>
+                <li class="list-spaces__subitem">Fully furnished or just the space</li>
+                <li class="list-spaces__subitem">
+                  Includes all the perks of a Coworking Membership
+                </li>
+              </ul>
+            </div>
+            <a class="list-spaces__link link" href="#LearnMore">Learn More<svg class="list-spaces__link-icon" width="24"
+                height="24">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg></a>
+          </li>
+          <li class="list-spaces__item">
+            <div class="list-spaces__wrapper">
+              <h3 class="list-spaces__subtitle">Membership</h3>
+              <p class="list-spaces__description">
+                Work at any of our +3000 coworking spaces worldwide
+              </p>
+              <ul class="list-spaces__sublist">
+                <li class="list-spaces__subitem">Access during business hours</li>
+                <li class="list-spaces__subitem">Access to our agenda of networking events</li>
+                <li class="list-spaces__subitem">
+                  Join a community of like-minded professionals
+                </li>
+              </ul>
+            </div>
+            <a class="list-spaces__link link" href="#LearnMore">Learn More<svg class="list-spaces__link-icon" width="24"
+                height="24">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg></a>
+          </li>
+          <li class="list-spaces__item">
+            <div class="list-spaces__wrapper">
+              <h3 class="list-spaces__subtitle">Private Desk</h3>
+              <p class="list-spaces__description">
+                Your own private desk in a shared office, locker included, all with a flexible
+                contract.
+              </p>
+              <ul class="list-spaces__sublist">
+                <li class="list-spaces__subitem">Access 24/7</li>
+                <li class="list-spaces__subitem">Set your business address at qSpace</li>
+                <li class="list-spaces__subitem">
+                  Free access to 1000+ coworking spaces worldwide
+                </li>
+              </ul>
+            </div>
+            <a class="list-spaces__link link" href="#LearnMore">Learn More<svg class="list-spaces__link-icon" width="24"
+                height="24">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg></a>
+          </li>
+          <li class="list-spaces__item">
+            <div class="list-spaces__wrapper">
+              <h3 class="list-spaces__subtitle">Meeting Room</h3>
+              <p class="list-spaces__description">
+                On-demand meeting rooms and event spaces with all the services you need.
+              </p>
+              <ul class="list-spaces__sublist">
+                <li class="list-spaces__subitem">Choose from variety of sizes and locations</li>
+                <li class="list-spaces__subitem">Discounts for members</li>
+                <li class="list-spaces__subitem">Catering and other services available</li>
+              </ul>
+            </div>
+            <a class="list-spaces__link link" href="#LearnMore">Learn More<svg class="list-spaces__link-icon" width="24"
+                height="24">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ========== ПРОСТРАНСТВО-КОНЕЦ ========== -->
+  </main>
+  <!-- ========== ФУТЕР ========== -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__wrapper">
+        <div class="footer__social">
+          <p class="footer__logo">qSpace</p>
+          <p class="footer__description">Revolutioning the way people and company works</p>
+          <ul class="social-list list">
+            <li class="social-list__item">
+              <a class="social-list__link link" href="#facebook"><svg width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link link" href="#instagram"><svg width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link link" href="#youtube"><svg width="24" height="24">
+                  <use href="./images/icons.svg#youtube"></use>
+                </svg></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link link" href="#twitter"><svg width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link link" href="#linkedin"><svg width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h2 class="footer__links-title">Quick Links</h2>
+          <ul class="footer__links-list list">
+            <li class="footer__links-item">
+              <a class="footer__links-link link" href="#Home">Home</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__links-link link" href="#Facilities">Facilities</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__links-link link" href="#Spaces">Spaces</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__links-link link" href="#Community">Community</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__links-link link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__community">
+          <h2 class="footer__community-title">Community</h2>
+          <ul class="footer__community-list list">
+            <li class="footer__community-item">
+              <a class="footer__community-link link" href="#Events">Events</a>
+            </li>
+            <li class="footer__community-item">
+              <a class="footer__community-link link" href="#Upcoming">Upcoming</a>
+            </li>
+            <li class="footer__community-item">
+              <a class="footer__community-link link" href="#Articles">Articles</a>
+            </li>
+            <li class="footer__community-item">
+              <a class="footer__community-link link" href="#Magazine">Magazine</a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-form js-speaker-form" action="#" autocomplete="off">
+          <label class="footer-form__label" for="newsletter">Subscribe to our newsletter</label>
+          <span class="footer-form__wrapper">
+            <input class="footer-form__input" type="email" name="newsletter" placeholder="Email address" id="newsletter"
+              required />
+            <button class="footer-form__button" type="submit">
+              <svg class="footer-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
             </button>
-          </div>
-          <div class="hero__block-img">
-            <ul class="hero__list list">
-              <li class="hero__item">
-                <p class="hero__img-name">Over 1000+ Happy Customers</p>
-                <div class="hero__img-wrapper">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/hero/webp/happy-cust.webp    1x,
-                        ./images/hero/webp/happy-cust@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/hero/jpg/happy-cust.jpg    1x,
-                        ./images/hero/jpg/happy-cust@2x.jpg 2x
-                      "
-                    />
-                    <img
-                      class="hero__img"
-                      src="./images/hero/jpg/happy-cust.jpg"
-                      alt="Happy Customers"
-                      width="305"
-                      height="305"
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li class="hero__item">
-                <p class="hero__img-name">Engaging Community</p>
-                <div class="hero__img-wrapper">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/hero/webp/eng-com.webp    1x,
-                        ./images/hero/webp/eng-com@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="./images/hero/jpg/eng-com.jpg 1x, ./images/hero/jpg/eng-com@2x.jpg 2x"
-                    />
-                    <img
-                      class="hero__img"
-                      src="./images/hero/jpg/eng-com.jpg"
-                      alt="Engaging Community"
-                      width="296"
-                      height="296"
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li class="hero__item">
-                <p class="hero__img-name">Premium Facilities</p>
-                <div class="hero__img-wrapper">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/hero/webp/prem-facil.webp    1x,
-                        ./images/hero/webp/prem-facil@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/hero/jpg/prem-facil.jpg    1x,
-                        ./images/hero/jpg/prem-facil@2x.jpg 2x
-                      "
-                    />
-                    <img
-                      class="hero__img"
-                      src="./images/hero/jpg/prem-facil.jpg"
-                      alt="Premium Facilities"
-                      width="231"
-                      height="231"
-                    />
-                  </picture>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- ========== ГЕРОЙ-КОНЕЦ ========== -->
-
-      <!-- ========== О НАС ========== -->
-      <section class="about">
-        <div class="about__container container">
-          <div class="about__block-img">
-            <picture>
-              <source
-                srcset="./images/about/webp/people.webp 1x, ./images/about/webp/people@2x.webp 2x"
-                type="image/webp"
-              />
-
-              <source
-                srcset="./images/about/webp/people.jpg 1x, ./images/about/webp/people@2x.jpg 2x"
-              />
-              <img
-                class="about__img"
-                src="./images/about/webp/people.jpg"
-                alt="People"
-                width="341"
-                height="334"
-              />
-            </picture>
-          </div>
-          <div class="about__block-text">
-            <h2 class="about__subtitle">About</h2>
-            <p class="about__title">Our Goals</p>
-            <p class="about__description">
-              We believe work is about people and ideas. qSpace are inhabited by forward thinkers,
-              innovators and game changers who are confident in achieving their goals.
-            </p>
-            <a class="about__link link" href="#LearnMore"
-              >Learn More<svg class="about__link-icon" width="24" height="24">
-                <use href="./images/icons.svg#arrow"></use></svg
-            ></a>
-          </div>
-        </div>
-      </section>
-      <!-- ========== О НАС-КОНЕЦ ========== -->
-
-      <!-- ========== УДОБСТВА ========== -->
-      <section class="facilities">
-        <div class="facilities__container container">
-          <h2 class="facilities__subtitle">Facilities</h2>
-          <p class="facilities__title">The advantages that we provide</p>
-          <ul class="facilities__list list">
-            <li class="facilities__item">
-              <svg class="facilities__icon" width="66" height="66">
-                <use href="./images/icons.svg#network"></use>
-              </svg>
-              <h3 class="facilities__item-title">Engaging Community</h3>
-              <p class="facilities__description">
-                Phasellus suspendisse non, convallis quam aliquet volutpat. Netus cras quam orc.
-              </p>
-            </li>
-            <li class="facilities__item">
-              <svg class="facilities__icon" width="66" height="66">
-                <use href="./images/icons.svg#premium"></use>
-              </svg>
-              <h3 class="facilities__item-title">Premium Facilities</h3>
-              <p class="facilities__description">
-                Diam eu, mauris, in amet viverra. Eget ut scelerisque eget nibh ut quis.
-              </p>
-            </li>
-            <li class="facilities__item">
-              <svg class="facilities__icon" width="66" height="66">
-                <use href="./images/icons.svg#price"></use>
-              </svg>
-              <h3 class="facilities__item-title">Affordable Price</h3>
-              <p class="facilities__description">Velit, rutrum a cursus eleifend egestas.</p>
-            </li>
-            <li class="facilities__item">
-              <svg class="facilities__icon" width="66" height="66">
-                <use href="./images/icons.svg#user"></use>
-              </svg>
-              <h3 class="facilities__item-title">Workspace Personalization</h3>
-              <p class="facilities__description">Ornare tempor morbi tempor nibh est a in.</p>
-            </li>
-            <li class="facilities__item">
-              <svg class="facilities__icon" width="66" height="66">
-                <use href="./images/icons.svg#time"></use>
-              </svg>
-              <h3 class="facilities__item-title">24/7 Access</h3>
-              <p class="facilities__description">
-                Tellus rhoncus enim nisl et lorem in sed. Congue nunc est habitant quam lectus
-                neque.
-              </p>
-            </li>
-            <li class="facilities__item">
-              <svg class="facilities__icon" width="66" height="66">
-                <use href="./images/icons.svg#clean"></use>
-              </svg>
-              <h3 class="facilities__item-title">Clean Environment</h3>
-              <p class="facilities__description">
-                Pretium sodales vitae id gravida tempor. Erat adipiscing orci turpis fames nunc, id
-                diam.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- ========== УДОБСТВА-КОНЕЦ ========== -->
-
-      <!-- ========== ПРОСТРАНСТВО ========== -->
-      <section class="spaces">
-        <div class="spaces__container container">
-          <h2 class="spaces__title">Spaces</h2>
-          <ul class="list-spaces list">
-            <li class="list-spaces__item">
-              <div class="list-spaces__wrapper">
-                <h3 class="list-spaces__subtitle">Office Space</h3>
-                <p class="list-spaces__description">
-                  Your own private office with a flexible contract that adapts to your business.
-                </p>
-                <ul class="list-spaces__sublist">
-                  <li class="list-spaces__subitem">Access 24/7</li>
-                  <li class="list-spaces__subitem">Fully furnished or just the space</li>
-                  <li class="list-spaces__subitem">
-                    Includes all the perks of a Coworking Membership
-                  </li>
-                </ul>
-              </div>
-              <a class="list-spaces__link link" href="#LearnMore"
-                >Learn More<svg class="list-spaces__link-icon" width="24" height="24">
-                  <use href="./images/icons.svg#arrow"></use></svg
-              ></a>
-            </li>
-            <li class="list-spaces__item">
-              <div class="list-spaces__wrapper">
-                <h3 class="list-spaces__subtitle">Membership</h3>
-                <p class="list-spaces__description">
-                  Work at any of our +3000 coworking spaces worldwide
-                </p>
-                <ul class="list-spaces__sublist">
-                  <li class="list-spaces__subitem">Access during business hours</li>
-                  <li class="list-spaces__subitem">Access to our agenda of networking events</li>
-                  <li class="list-spaces__subitem">
-                    Join a community of like-minded professionals
-                  </li>
-                </ul>
-              </div>
-              <a class="list-spaces__link link" href="#LearnMore"
-                >Learn More<svg class="list-spaces__link-icon" width="24" height="24">
-                  <use href="./images/icons.svg#arrow"></use></svg
-              ></a>
-            </li>
-            <li class="list-spaces__item">
-              <div class="list-spaces__wrapper">
-                <h3 class="list-spaces__subtitle">Private Desk</h3>
-                <p class="list-spaces__description">
-                  Your own private desk in a shared office, locker included, all with a flexible
-                  contract.
-                </p>
-                <ul class="list-spaces__sublist">
-                  <li class="list-spaces__subitem">Access 24/7</li>
-                  <li class="list-spaces__subitem">Set your business address at qSpace</li>
-                  <li class="list-spaces__subitem">
-                    Free access to 1000+ coworking spaces worldwide
-                  </li>
-                </ul>
-              </div>
-              <a class="list-spaces__link link" href="#LearnMore"
-                >Learn More<svg class="list-spaces__link-icon" width="24" height="24">
-                  <use href="./images/icons.svg#arrow"></use></svg
-              ></a>
-            </li>
-            <li class="list-spaces__item">
-              <div class="list-spaces__wrapper">
-                <h3 class="list-spaces__subtitle">Meeting Room</h3>
-                <p class="list-spaces__description">
-                  On-demand meeting rooms and event spaces with all the services you need.
-                </p>
-                <ul class="list-spaces__sublist">
-                  <li class="list-spaces__subitem">Choose from variety of sizes and locations</li>
-                  <li class="list-spaces__subitem">Discounts for members</li>
-                  <li class="list-spaces__subitem">Catering and other services available</li>
-                </ul>
-              </div>
-              <a class="list-spaces__link link" href="#LearnMore"
-                >Learn More<svg class="list-spaces__link-icon" width="24" height="24">
-                  <use href="./images/icons.svg#arrow"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- ========== ПРОСТРАНСТВО-КОНЕЦ ========== -->
-    </main>
-    <!-- ========== ФУТЕР ========== -->
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__wrapper">
-          <div class="footer__social">
-            <p class="footer__logo">qSpace</p>
-            <p class="footer__description">Revolutioning the way people and company works</p>
-            <ul class="social-list list">
-              <li class="social-list__item">
-                <a class="social-list__link link" href="#facebook"
-                  ><svg width="24" height="24">
-                    <use href="./images/icons.svg#facebook"></use></svg
-                ></a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link link" href="#instagram"
-                  ><svg width="24" height="24">
-                    <use href="./images/icons.svg#instagram"></use></svg
-                ></a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link link" href="#youtube"
-                  ><svg width="24" height="24">
-                    <use href="./images/icons.svg#youtube"></use></svg
-                ></a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link link" href="#twitter"
-                  ><svg width="24" height="24">
-                    <use href="./images/icons.svg#twitter"></use></svg
-                ></a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link link" href="#linkedin"
-                  ><svg width="24" height="24">
-                    <use href="./images/icons.svg#linkedin"></use></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__links">
-            <h2 class="footer__links-title">Quick Links</h2>
-            <ul class="footer__links-list list">
-              <li class="footer__links-item">
-                <a class="footer__links-link link" href="#Home">Home</a>
-              </li>
-              <li class="footer__links-item">
-                <a class="footer__links-link link" href="#Facilities">Facilities</a>
-              </li>
-              <li class="footer__links-item">
-                <a class="footer__links-link link" href="#Spaces">Spaces</a>
-              </li>
-              <li class="footer__links-item">
-                <a class="footer__links-link link" href="#Community">Community</a>
-              </li>
-              <li class="footer__links-item">
-                <a class="footer__links-link link" href="#Contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__community">
-            <h2 class="footer__community-title">Community</h2>
-            <ul class="footer__community-list list">
-              <li class="footer__community-item">
-                <a class="footer__community-link link" href="#Events">Events</a>
-              </li>
-              <li class="footer__community-item">
-                <a class="footer__community-link link" href="#Upcoming">Upcoming</a>
-              </li>
-              <li class="footer__community-item">
-                <a class="footer__community-link link" href="#Articles">Articles</a>
-              </li>
-              <li class="footer__community-item">
-                <a class="footer__community-link link" href="#Magazine">Magazine</a>
-              </li>
-            </ul>
-          </div>
-          <form class="footer-form js-speaker-form" action="#" autocomplete="off">
-            <label class="footer-form__label" for="newsletter">Subscribe to our newsletter</label>
-            <span class="footer-form__wrapper">
-              <input
-                class="footer-form__input"
-                type="email"
-                name="newsletter"
-                placeholder="Email address"
-                id="newsletter"
-                required
-              />
-              <button class="footer-form__button" type="submit">
-                <svg class="footer-form__icon" width="24" height="24">
-                  <use href="./images/icons.svg#arrow"></use>
-                </svg>
-              </button>
-            </span>
-          </form>
-        </div>
-        <p class="footer__copyright">©2021 qSpace. All rights reserved</p>
+          </span>
+        </form>
       </div>
-    </footer>
-    <!-- ========== ФУТЕР-КОНЕЦ ========== -->
+      <p class="footer__copyright">©2021 qSpace. All rights reserved</p>
+    </div>
+  </footer>
+  <!-- ========== ФУТЕР-КОНЕЦ ========== -->
 
-    <!-- ==========СКРИПТЫ JAVASCRIPT ========== -->
-    <script src="./js/speaker-form.js"></script>
-  </body>
+  <!-- ==========СКРИПТЫ JAVASCRIPT ========== -->
+  <script src="./js/speaker-form.js"></script>
+</body>
+
 </html>
