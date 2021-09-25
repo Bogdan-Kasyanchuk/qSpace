@@ -1,14 +1,36 @@
 .facilities {
-  padding-top: 115px;
+  padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.facilities__container {
+  background: url('../images/facilities/facilities-pattern1.png') no-repeat top 20px left 125px;
 }
 
 .facilities__subtitle {
   margin-bottom: 16px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 1.45;
   text-align: center;
   letter-spacing: 1px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 45px;
+    left: 600px;
+    width: 120px;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 178, 30, 0),
+      rgba(255, 178, 30, 1),
+      rgba(255, 178, 30, 0)
+    );
+    transform: translateX(-50%);
+  }
 }
 
 .facilities__title {
@@ -31,13 +53,62 @@
   flex-basis: calc((100% - 3 * 133px) / 3);
 }
 
+.facilities__wrapper {
+  width: 66px;
+  height: 66px;
+  position: relative;
+
+  .facilities__item &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+
+  .facilities__item:nth-child(1) &::before {
+    border-top: 1px solid var(--primary-accent-color);
+    border-left: 1px solid var(--primary-accent-color);
+    transform: rotate(-35deg);
+  }
+
+  .facilities__item:nth-child(2) &::before {
+    border-right: 1px solid var(--secondary-text-color);
+    transform: rotate(-15deg);
+  }
+
+  .facilities__item:nth-child(3) &::before {
+    border-bottom: 1px solid var(--primary-accent-color);
+    border-right: 1px solid var(--primary-accent-color);
+  }
+
+  .facilities__item:nth-child(4) &::before {
+    border-top: 1px solid var(--secondary-text-color);
+    border-left: 1px solid var(--secondary-text-color);
+    transform: rotate(-20deg);
+  }
+
+  .facilities__item:nth-child(5) &::before {
+    border-bottom: 1px solid var(--primary-accent-color);
+    border-left: 1px solid var(--primary-accent-color);
+    transform: rotate(-20deg);
+  }
+
+  .facilities__item:nth-child(6) &::before {
+    border-top: 1px solid var(--secondary-text-color);
+    border-left: 1px solid var(--secondary-text-color);
+  }
+}
+
 .facilities__icon {
   display: block;
   margin-bottom: 16px;
   padding: 12px;
   fill: var(--primary-accent-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
 
   .facilities__item:nth-child(even) & {
     fill: var(--secondary-text-color);

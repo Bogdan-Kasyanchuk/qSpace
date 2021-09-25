@@ -5,11 +5,44 @@
 
 .about__container {
   display: flex;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -50px;
+    left: 85px;
+    width: 172px;
+    height: 172px;
+    background: url('../images/about/about-pattern4.png') no-repeat;
+  }
 }
 
 .about__block-img {
-  padding-left: 35px;
-  margin-right: 70px;
+  padding-left: 40px;
+  margin-right: 85px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -33px;
+    left: 0px;
+    width: 311px;
+    height: 311px;
+    background: url('../images/about/about-pattern2.png') no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -8px;
+    right: -40px;
+    width: 168px;
+    height: 136px;
+    background: url('../images/about/about-pattern3.png') no-repeat;
+    z-index: -1;
+  }
 }
 
 .about__img {
@@ -23,8 +56,20 @@
 .about__subtitle {
   margin-bottom: 24px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 1.45;
   letter-spacing: 1px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 37px;
+    left: 0;
+    width: 120px;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(18, 84, 255, 1), rgba(18, 84, 255, 0));
+  }
 }
 
 .about__title {

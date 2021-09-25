@@ -1,3 +1,35 @@
+.wrapper {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.wrapper__header-hero {
+  background: url('../images/header/header-pattern1.png') no-repeat top left -30px,
+    url('../images/hero/hero-pattern1.png') no-repeat top 490px right 0,
+    url('../images/hero/hero-pattern2.png') no-repeat top 192px right 12px,
+    url('../images/hero/hero-pattern3.png') no-repeat bottom 0 left 0;
+}
+
+.wrapper__about {
+  background: url('../images/about/about-pattern1.png') no-repeat bottom 30px right -30px;
+}
+
+.wrapper__facilities-spaces {
+  background: url('../images/facilities/facilities-pattern2.png') no-repeat top 10px left 895px,
+    url('../images/facilities/facilities-pattern3.png') no-repeat top 600px left 0px,
+    url('../images/facilities/facilities-pattern4.png') no-repeat top 335px right 0px,
+    url('../images/facilities/facilities-pattern5.png') no-repeat top 570px right 0px,
+    url('../images/spaces/spaces-pattern1.png') no-repeat top 820px left 0px,
+    url('../images/spaces/spaces-pattern2.png') no-repeat top 1250px left 0px,
+    url('../images/spaces/spaces-pattern6.png') no-repeat bottom 115px right 335px,
+    url('../images/spaces/spaces-pattern7.png') no-repeat bottom 235px right 0px;
+}
+
+.wrapper__footer {
+  background: url('../images/footer/footer-pattern1.png') no-repeat top 15px left 0px,
+    url('../images/footer/footer-pattern2.png') no-repeat bottom 125px right 0px;
+}
+
 .container {
   margin: 0 auto;
   width: 1230px;

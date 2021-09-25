@@ -3,16 +3,40 @@
   padding-bottom: 140px;
 }
 
+.spaces__container {
+  background: url('../images/spaces/spaces-pattern3.png') no-repeat top 65px left 210px;
+}
+
 .spaces__title {
   margin-bottom: 80px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 1.45;
   letter-spacing: 1px;
   text-align: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 45px;
+    left: 600px;
+    width: 120px;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      rgba(18, 84, 255, 0),
+      rgba(18, 84, 255, 1),
+      rgba(18, 84, 255, 0)
+    );
+    transform: translateX(-50%);
+  }
 }
 
 .list-spaces {
   display: flex;
+  background: url('../images/spaces/spaces-pattern4.png') no-repeat bottom 60px left 195px,
+    url('../images/spaces/spaces-pattern5.png') no-repeat top 30px right 215px;
 }
 
 .list-spaces__item {
@@ -23,6 +47,7 @@
   flex-basis: calc((100% - 3 * 40px) / 4);
   height: 640px;
   padding: 40px 18px;
+  background-color: var(--secondary-accent-color);
 
   &:not(:last-child) {
     margin-right: 40px;
